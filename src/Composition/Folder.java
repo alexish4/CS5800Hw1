@@ -2,7 +2,7 @@ package Composition;
 import java.util.ArrayList;
 
 public class Folder {
-    private String folderName;
+    private String folder_name;
 
     private int treeLevelRelativeToParent = 0;
 
@@ -10,7 +10,7 @@ public class Folder {
     ArrayList<File> files = new ArrayList<>();
 
     public Folder(String folderName) {
-        this.folderName = folderName;
+        this.folder_name = folderName;
     }
 
     public Folder() {
@@ -32,12 +32,12 @@ public class Folder {
         this.files = files;
     }
 
-    public String getFolderName() {
-        return folderName;
+    public String getFolder_name() {
+        return folder_name;
     }
 
-    public void setFolderName(String folderName) {
-        this.folderName = folderName;
+    public void setFolder_name(String folder_name) {
+        this.folder_name = folder_name;
     }
 
     public Folder addSubFolder(String subFolderName) {
@@ -68,7 +68,7 @@ public class Folder {
     }
 
     public void printFolderTree() {
-        System.out.println(folderName + "/");
+        System.out.println(folder_name + "/");
         for(Folder folder : subfolders) {
             System.out.print("---");
             for(int i = 0; i < treeLevelRelativeToParent; i++)

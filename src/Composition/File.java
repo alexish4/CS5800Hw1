@@ -3,8 +3,8 @@ package Composition;
 public class File {
     private String name;
 
-    public File(String fileName) {
-        this.name = fileName;
+    public File(String file_name) {
+        this.name = file_name;
     }
 
     public File() {
@@ -14,7 +14,7 @@ public class File {
         return name;
     }
 
-    public void setName(String fileName) {
-        this.name = fileName;
+    public void setName(String file_name) {
+        this.name = file_name;
     }
 }
