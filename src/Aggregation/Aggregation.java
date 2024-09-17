@@ -6,6 +6,7 @@ public class Aggregation {
     }
 
     public static void aggregationDriverProgram() {
+        Course ase = new Course();
 
     }
 }

@@ -40,17 +40,19 @@ public class Folder {
         this.folderName = folderName;
     }
 
-    public Folder addSubFolder(Folder folder) {
-        subfolders.add(folder);
-        return folder;
+    public Folder addSubFolder(String subFolderName) {
+        Folder newSubFolder = new Folder(subFolderName);
+        subfolders.add(newSubFolder);
+        return newSubFolder;
     }
     public void removeSubFolder(Folder folder) {
         subfolders.remove(folder);
     }
 
-    public File addFile(File file) {
-        files.add(file);
-        return file;
+    public File addFile(String fileName) {
+        File newFile = new File(fileName);
+        files.add(newFile);
+        return newFile;
     }
 
     public void removeFile(File file) {
