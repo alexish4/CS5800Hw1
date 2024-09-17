@@ -55,11 +55,18 @@ public class Course {
     public void printCourseInfo() {
         System.out.println("Name: " + name);
         for (Instructor instructor : instructors) {
-            System.out.println("Instructor: " + instructor.getFirst_name()
-                    + " " + instructor.getLast_name());
+            System.out.println(
+                    "Instructor: " + instructor.getFirst_name()
+                    + ", " + instructor.getLast_name()
+                    + ", " + instructor.getOffice_number()
+            );
         }
         for (Textbook textbook : textbooks) {
-            System.out.println("Textbook: " + textbook);
+            System.out.println(
+                    "Textbook: " + textbook.getTitle()
+                    + ", " + textbook.getAuthor()
+                    + ", " + textbook.getPublisher()
+            );
         }
     }
 }

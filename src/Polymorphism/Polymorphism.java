@@ -12,32 +12,32 @@ public class Polymorphism {
 
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("Welcome to the Dynamic Polymorphism.Polymorphism.Ship Program!");
+        System.out.println("Welcome to the Dynamic Ship Program!");
         System.out.println();
 
-        System.out.print("Please Enter Polymorphism.Polymorphism.Ship's Name: ");
+        System.out.print("Please Enter Ship's Name: ");
         String ship_name = keyboard.nextLine();
-        System.out.print("Please Enter the Year the Polymorphism.Polymorphism.Ship was Built: ");
+        System.out.print("Please Enter the Year the Ship was Built: ");
         int year = keyboard.nextInt();
         keyboard.nextLine(); // Consume leftover newline
         ship_array[0] = new Ship(ship_name, year);
 
         System.out.println();
-        System.out.print("Please Enter Cruise Polymorphism.Polymorphism.Ship's Name: ");
+        System.out.print("Please Enter Cruise Ship's Name: ");
         ship_name = keyboard.nextLine();
-        System.out.print("Please Enter the Year the Cruise Polymorphism.Polymorphism.Ship was Built: ");
+        System.out.print("Please Enter the Year the Cruise Ship was Built: ");
         year = keyboard.nextInt();
-        System.out.print("Please Enter Cruise Polymorphism.Polymorphism.Ship's Max Number of Passengers: ");
+        System.out.print("Please Enter Cruise Ship's Max Number of Passengers: ");
         int max_passengers = keyboard.nextInt();
         keyboard.nextLine(); // Consume leftover newline
         ship_array[1] = new CruiseShip(ship_name, year, max_passengers);
 
         System.out.println();
-        System.out.print("Please Enter Cargo Polymorphism.Polymorphism.Ship's Name: ");
+        System.out.print("Please Enter Cargo Ship's Name: ");
         ship_name = keyboard.nextLine();
-        System.out.print("Please Enter the Year the Cargo Polymorphism.Polymorphism.Ship was Built: ");
+        System.out.print("Please Enter the Year the Cargo Ship was Built: ");
         year = keyboard.nextInt();
-        System.out.print("Please Enter Cargo Polymorphism.Polymorphism.Ship's Cargo Capacity: ");
+        System.out.print("Please Enter Cargo Ship's Cargo Capacity: ");
         int cargo_capacity = keyboard.nextInt();
         ship_array[2] = new CargoShip(ship_name, year, cargo_capacity);
 

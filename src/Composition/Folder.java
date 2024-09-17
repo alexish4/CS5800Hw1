@@ -68,7 +68,7 @@ public class Folder {
     }
 
     public void printFolderTree() {
-        System.out.println(folderName);
+        System.out.println(folderName + "/");
         for(Folder folder : subfolders) {
             System.out.print("---");
             for(int i = 0; i < treeLevelRelativeToParent; i++)
